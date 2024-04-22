@@ -1,0 +1,68 @@
+.quiz-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.quiz-page h1{
+    color: #fff;
+    border: 2px solid #08be6c;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+}
+.quiz-page .questions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.quiz-page .questions p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+}
+.quiz-page ul{
+    width: 80%;
+}
+.quiz-page ul li{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: #fff;
+    list-style: none;
+    height: auto;
+    width: 100%;
+    user-select: none;
+    line-height: 25px;
+    overflow: hidden;
+}
+.quiz-page ul li label{
+    margin-top: 0px;
+    text-align:left;
+    padding: 20px 0px 10px 20px;
+    width: 100%;
+}
+.quiz-page ul li input {
+    width: 20px;
+    height: 20px;
+}
+.quiz-page .grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+.quiz-page .grid button{
+    border: none;
+    padding: 5px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+.quiz-page .grid button:active{
+    transform: scale(.9);
+    transition: .3s;
+}

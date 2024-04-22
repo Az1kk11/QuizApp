@@ -1,0 +1,114 @@
+.container ol li {
+    font-size: 1.4em;
+    color: #cecece;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.login-register{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-register .register{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-register .register h3{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.login-register .register form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-register .register input{
+    width: 300px;
+    height: 25px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.login-register .register button{
+    height: 28px;
+    width: 200px;
+    background-color: #0dff92;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.login-register .register button:hover{
+    background-color: #08be6c;
+}
+.login-register .register p{
+    color: #aaa;
+}
+.login-register .register p:hover{
+    color: rgb(124, 124, 124);
+}
+.go-test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.go-test p{
+    color: #fff;
+    text-transform:capitalize;
+    font-size: 22px;
+}
+.go-test .btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.go-test .btn-box button{
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid #08be6c;
+    color: #fff;
+    width: 250px;
+    letter-spacing: .5px;
+    border-radius: 4px;
+    transition: .5s;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.go-test button:hover{
+    background: #08be6c;
+}
+.go-test button:active{
+    transform: scale(.9);
+    transition: .5s;
+}
+.go-test .select-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+.go-test .select-box label{
+    color: #fff;
+    margin-right: 15px;
+    font-size: 18px;
+}
+.go-test .select-box select{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+}
