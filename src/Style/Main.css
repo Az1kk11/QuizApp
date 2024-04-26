@@ -112,3 +112,33 @@
     height: 30px;
     font-size: 18px;
 }
+
+.go-test h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+.go-test h4 p{
+    margin-left: 10px;
+}
+
+.logout{
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+
+.logout i{
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+.logout i:hover{
+    color: rgb(167, 167, 167);
+}

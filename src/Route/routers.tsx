@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Main, Quiz } from '../Components'
+import { Main, Quiz, Result } from '../Components'
 
 
 const Routers: React.FC = () => {
@@ -8,6 +8,7 @@ const Routers: React.FC = () => {
         <Routes>
             <Route path='/' element={<Main />} />
             <Route path='/quiz' element={<Quiz />} />
+            <Route path='/result' element={<Result />} />
         </Routes >
     )
 }

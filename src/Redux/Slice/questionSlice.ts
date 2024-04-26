@@ -15,16 +15,18 @@ export const questionSlice = createSlice({
             state.questionArr = action.payload.data.questions
         },
         nextQuestions: (state) => {
-            
             state.trace += 1
         },
-        prevQuestions: (state) => {
-            state.trace -= 1
+        resetQuestions: () => {
+            return {
+                questionArr: [],
+                trace: 1
+            }
         }
     }
 })
 
-export const { startExamAction, nextQuestions, prevQuestions } = questionSlice.actions;
+export const { startExamAction, nextQuestions, resetQuestions } = questionSlice.actions;
 
 export const selectQuestion = (state: RootState) => state.questionSlice
 

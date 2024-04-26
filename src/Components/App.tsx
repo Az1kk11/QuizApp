@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
+
 import { siginSuccess } from '../Redux/Slice/userSlice'
 import AuthUserServices from '../Redux/services'
 
-import '../Style/App.css'
-import { Main } from './Main'
 import Routers from '../Route/routers'
+
+import '../Style/App.css'
 
 const App: React.FC = () => {
   const dispatch = useDispatch()
@@ -19,9 +20,7 @@ const App: React.FC = () => {
     }
   }
 
-  useEffect(() => {
-    getUser()
-  }, [])
+  useEffect(() => { getUser() }, [])
 
   return <Routers />
 }

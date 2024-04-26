@@ -8,7 +8,7 @@ axios.interceptors.request.use(config => {
 
         const authorization = token ? `Bearer ${token}` : ''
         config.headers.Authorization = authorization
-
+    
     return config
 })
 
