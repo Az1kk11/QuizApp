@@ -108,7 +108,7 @@
     font-size: 18px;
 }
 .go-test .select-box select{
-    width: 100px;
+    width: auto;
     height: 30px;
     font-size: 18px;
 }
@@ -130,7 +130,7 @@
 
 .logout{
     position: absolute;
-    top: 0;
+    top: 20px;
     right: -100px;
 }
 

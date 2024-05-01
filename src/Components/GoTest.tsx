@@ -6,6 +6,7 @@ import { startExamAction } from '../Redux/Slice/questionSlice'
 import { selectUserSlice } from '../Redux/Slice/userSlice'
 import { categorie, select } from '../Redux/Slice/slice'
 import AuthUserServices from '../Redux/services'
+import { setItem } from '../Helper/persistance-storage'
 
 type categorieType = {
     id: number,
@@ -18,18 +19,20 @@ export const GoTest: React.FC = () => {
     const navigate = useNavigate()
     const { user } = useSelector(selectUserSlice)
     const { categories } = useSelector(select)
-    const [categoryId, setCategoryId] = useState(1)
+    const [categoryId, setCategoryId] = useState()
 
     const getCategory = async () => {
         try {
             const res = await AuthUserServices.allCategory()
             dispatch(categorie(res))
+            setCategoryId(res[0].id)
         } catch (error) {
             console.log(error);
         }
     }
 
     const questions = async (id: any) => {
+        setItem('categoryId', id)
         try {
             const res = await AuthUserServices.categoryQuestion(id)
             dispatch(startExamAction(res))
@@ -62,7 +65,7 @@ export const GoTest: React.FC = () => {
 
             <div className="btn-box">
                 <button onClick={() => questionsRandom(categoryId)}>Bir kategoriyag'a tiyisli tosınarlı 10 test</button>
-                <button onClick={() => questions(categoryId)}>Bir kategoriyag'a tiyisli hamme test</button>
+                <button onClick={() => questions(categoryId)}>Bir kategoriyag'a tiyisli 10 test</button>
             </div>
 
         </div>

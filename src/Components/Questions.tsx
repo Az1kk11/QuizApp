@@ -15,7 +15,7 @@ export const Questions: React.FC<any> = ({ currentPosts, setAnswer }) => {
         {currentPosts[0]?.options.map((item: any, idx: number) => (
 
           <li key={idx}>
-            <input type='radio' id={item} name="options" onChange={() => setAnswer(idx)} />
+            <input type='radio' id={item} name="options" onChange={() => setAnswer(idx+1)} />
             <label className='text-primary' htmlFor={item}>{item}</label>
             <div className={`check`}></div>
           </li>
