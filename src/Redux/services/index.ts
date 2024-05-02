@@ -3,12 +3,12 @@ import axios from "./api";
 
 const AuthUserServices = {
     async adminLogin(adminLogin: object) {
-        const { data } = await axios.get(`/employee/login`, adminLogin)
+        const { data } = await axios.post(`/employee/login`, adminLogin)
         return data
     },
 
 
-    async createCategory(name: string) {
+    async createCategory(name: object) {
         const { data } = await axios.post('/category/create', name)
         return data
     },

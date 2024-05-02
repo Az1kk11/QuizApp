@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 .login-register .register{
     width: 300px;
@@ -69,6 +70,7 @@
     color: #fff;
     text-transform:capitalize;
     font-size: 22px;
+    margin-top: 20px;
 }
 .go-test .btn-box{
     display: flex;
@@ -100,7 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -10px;
+    margin-top: 15px;
 }
 .go-test .select-box label{
     color: #fff;
@@ -121,11 +123,12 @@
     letter-spacing: 1px;
     font-weight: 500;
     font-size: 20px;
-    margin-top: -10px;
-    margin-bottom: -5px;
+    margin-top: 10px;
+    /* margin-bottom: -5px; */
 }
 .go-test h4 p{
-    margin-left: 10px;
+    margin: 0;
+    margin-left:20px;
 }
 
 .logout{

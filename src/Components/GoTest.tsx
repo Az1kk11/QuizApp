@@ -30,7 +30,6 @@ export const GoTest: React.FC = () => {
             console.log(error);
         }
     }
-
     const questions = async (id: any) => {
         setItem('categoryId', id)
         try {

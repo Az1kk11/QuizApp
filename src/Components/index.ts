@@ -1,6 +1,3 @@
-export * from './Main'
 export * from './Questions'
-export * from './Quiz'
-export * from './Result'
-export * from './NotFound/NotFound'
 export * from './UserLoginRegister'
+export * from './GoTest'

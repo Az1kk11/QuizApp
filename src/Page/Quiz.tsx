@@ -7,7 +7,7 @@ import { pushResultAction, resultSelect } from '../Redux/Slice/resultSlice'
 
 import { toast } from 'react-toastify'
 
-import { Questions } from './Questions'
+import { Questions } from '../Components/Questions'
 
 import '../Style/Quiz.css'
 

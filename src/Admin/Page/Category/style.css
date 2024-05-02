@@ -1,0 +1,69 @@
+.category-page {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+}
+.category-page .category-content {
+  background-color: rgba(0, 0, 0, 0.301);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.category-page .category-content h3 {
+  color: rgb(225, 225, 225);
+  font-size: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
+  letter-spacing: 1px;
+}
+
+.category-page .category-content form{
+    display: flex; 
+    align-items: center;
+    margin-top: 20px;
+}
+.category-page .category-content form input{
+    height: 30px;
+    width: 300px;
+    margin: 0 100px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-bottom: 2px solid #0DFF92;
+    padding: 5px 6px;
+    color: #fff;
+}
+.category-page .category-content form input:focus{
+    outline: none;
+}
+.category-page .category-content form input::placeholder{
+    color: #fff;
+}
+.category-page .category-content form button{
+    height: 30px;
+    width: 150px;
+    background-color: #0DFF92;
+    border: none;
+    transition: .5s;
+    font-size: 17px;
+}
+.category-page .category-content form button:active{
+    transform: scale(.9);
+    transition: .5s;
+}
+
+.category-page .category-content table{
+    margin-top: 50px;
+    padding-left: 51px;
+}
+.category-page .category-content table tbody th{
+    color: rgba(238, 238, 238, 0.767);
+    letter-spacing: 1px;
+}
+.category-page .category-content table thead th{
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.category-page .category-content .ri-delete-bin-line:hover{
+    color: red;
+}

@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { logoutUser, selectUserSlice } from '../Redux/Slice/userSlice'
 
-import { UserLoginRegister } from './UserLoginRegister'
-import { GoTest } from './GoTest'
+import { UserLoginRegister } from '../Components/UserLoginRegister'
+import { GoTest } from '../Components/GoTest'
 
 import '../Style/Main.css'
 import { removeItem } from '../Helper/persistance-storage'
@@ -12,10 +12,11 @@ import { removeItem } from '../Helper/persistance-storage'
 
 export const Main: React.FC = () => {
   const { logedIn } = useSelector(selectUserSlice)
-  const dispatch =useDispatch()
+  const dispatch = useDispatch()
 
   const logoutHandler = () => {
     removeItem('token')
+    removeItem('tokenAdmin')
     dispatch(logoutUser())
   }
 

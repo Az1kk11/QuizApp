@@ -1,10 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { configureStore } from "@reduxjs/toolkit";
-import adminSlice from './Slice/adminSlice';
-import userSlice from './Slice/userSlice';
-import slice from './Slice/slice';
-import questionSlice from './Slice/questionSlice';
-import resultSlice from './Slice/resultSlice';
+
+import { adminSlice, questionSlice, resultSlice, slice, userSlice } from './index'
 
 export const store = configureStore({
     reducer: {

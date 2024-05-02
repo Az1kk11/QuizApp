@@ -1,0 +1,7 @@
+export * from './services/api'
+export * from './services/index'
+export {default as adminSlice} from './Slice/adminSlice'
+export {default as questionSlice} from './Slice/questionSlice'
+export {default as resultSlice} from './Slice/resultSlice'
+export {default as slice} from './Slice/slice'
+export {default as userSlice} from './Slice/userSlice'

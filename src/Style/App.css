@@ -8,7 +8,7 @@
 
 body,
 html {
-  height: auto;
+  height: 100vh;
   background: linear-gradient(
     0deg,
     rgba(28, 7, 124, 1) 0%,
@@ -30,7 +30,6 @@ html {
   width: 900px;
   padding: 40px;
   padding-top: 40px;
-  padding-bottom: 112px;
 }
 
 .container .title {
@@ -39,6 +38,8 @@ html {
   border: 5px solid var(--primary-color);
   padding: 0.3em 0.2em;
   border-radius: 4px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .text-light {
@@ -47,8 +48,6 @@ html {
 
 .container ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   overflow: auto;
 }
 
@@ -91,14 +90,21 @@ html {
   justify-self: flex-start;
 }
 
+ul{
+  width: 700px;
+  margin-top: 20px;
+}
 ul li {
   color: #aaaaaa;
   display: block;
   position: relative;
   float: left;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-bottom: 1px solid #333;
+}
+ul li:nth-last-child(1){
+  border-bottom: none;
 }
 
 ul li input[type="radio"] {
@@ -111,7 +117,7 @@ ul li label {
   position: relative;
   font-weight: 300;
   font-size: 1.35em;
-  padding: 25px 25px 25px 80px;
+  padding: 10px 10px 10px 80px;
   margin: 10px auto;
   height: 30px;
   z-index: 9;
@@ -128,9 +134,9 @@ ul li .check {
   position: absolute;
   border: 5px solid #aaaaaa;
   border-radius: 100%;
-  height: 25px;
-  width: 25px;
-  top: 30px;
+  height: 35px;
+  width: 35px;
+  top: 20px;
   left: 20px;
   z-index: 5;
   transition: border 0.25s linear;
