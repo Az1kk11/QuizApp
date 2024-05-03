@@ -39,6 +39,7 @@ export const GoTest: React.FC = () => {
         } catch (error) { console.log(error) }
     }
     const questionsRandom = async (id: any) => {
+        setItem('categoryId', id)
         try {
             const res = await AuthUserServices.categoryQuestionRandom(id)
             dispatch(startExamAction(res))
@@ -63,8 +64,8 @@ export const GoTest: React.FC = () => {
             </div>
 
             <div className="btn-box">
-                <button onClick={() => questionsRandom(categoryId)}>Bir kategoriyag'a tiyisli tosınarlı 10 test</button>
-                <button onClick={() => questions(categoryId)}>Bir kategoriyag'a tiyisli 10 test</button>
+                <button onClick={() => questionsRandom(categoryId)}>Bir kategoriyag'a tiyisli tosınarlı 10 test <i className="ri-arrow-right-line"></i></button>
+                <button onClick={() => questions(categoryId)}>Bir kategoriyag'a tiyisli 10 test <i className="ri-arrow-right-line"></i></button>
             </div>
 
         </div>

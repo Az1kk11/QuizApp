@@ -46,13 +46,15 @@
 .login-register .register button{
     height: 28px;
     width: 200px;
-    background-color: #0dff92;
+    background-color: #c68045;
+    color: #fff;
     border: none;
+    margin-top: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 .login-register .register button:hover{
-    background-color: #08be6c;
+    background-color: #c67f45ce;
 }
 .login-register .register p{
     color: #aaa;
@@ -75,24 +77,24 @@
 .go-test .btn-box{
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     margin-top: 20px;
 }
 .go-test .btn-box button{
     font-size: 18px;
     background: transparent;
-    border: 2px solid #08be6c;
+    border: none;
     color: #fff;
-    width: 250px;
+    width: auto;
     letter-spacing: .5px;
     border-radius: 4px;
     transition: .5s;
     cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
 }
 .go-test button:hover{
-    background: #08be6c;
+    background: rgba(175, 175, 175, 0.575);
 }
 .go-test button:active{
     transform: scale(.9);

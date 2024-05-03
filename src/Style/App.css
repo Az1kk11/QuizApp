@@ -35,7 +35,7 @@ html {
 .container .title {
   font-size: 3em;
   text-align: center;
-  border: 5px solid var(--primary-color);
+  /* border: 5px solid var(--primary-color); */
   padding: 0.3em 0.2em;
   border-radius: 4px;
   margin-top: 50px;
@@ -71,18 +71,21 @@ html {
 
 .container .btn {
   padding: 0.2em 1.7em;
-  border: 2px solid #0dff92;
+  border: 2px solid #c68045;
   color: #fff;
+  font-size: 16px;
   text-decoration: none;
 }
 
 .container .btn:hover {
-  background-color: #0dff92;
+  background-color: #c68045;
 }
 
 .next {
-  background-color: var(--primary-color);
+  background-color: #c68045;
   justify-self: flex-end;
+  border-radius: 5px;
+  color: #fff;
 }
 
 .prev {

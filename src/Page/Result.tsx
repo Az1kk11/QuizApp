@@ -35,7 +35,7 @@ export const Result: React.FC = () => {
     dispatch(resetQuestions())
     navigate('/')
   }
-
+  
   const resultSave = async (e: React.FormEventHandler<HTMLFormElement> | any) => {
     e.preventDefault()
 
