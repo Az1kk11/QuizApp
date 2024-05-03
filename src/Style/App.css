@@ -15,8 +15,7 @@ html {
     rgba(198, 128, 69, 1) 100%,
     rgba(197, 128, 69, 1) 100%
   );
-  background-repeat:repeat-x;
-  
+  background-repeat: repeat-x;
 }
 
 * > * {
@@ -35,7 +34,6 @@ html {
 .container .title {
   font-size: 3em;
   text-align: center;
-  /* border: 5px solid var(--primary-color); */
   padding: 0.3em 0.2em;
   border-radius: 4px;
   margin-top: 50px;
@@ -55,14 +53,6 @@ html {
   padding: 3em;
 }
 
-/* 
-.container .questions .qid{
-  padding: .2em .7em;
-  color: #222222;
-  background-color: #0DFF92;
-  border-radius: 50px;
-} */
-
 .container .grid {
   margin-top: 3em;
   display: grid;
@@ -71,21 +61,35 @@ html {
 
 .container .btn {
   padding: 0.2em 1.7em;
-  border: 2px solid #c68045;
+  background: linear-gradient(
+    0deg,
+    rgba(197, 128, 69, 1) 0%,
+    rgba(219, 728, 69, -1) 100%
+  );
   color: #fff;
   font-size: 16px;
   text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  transition: .5s;
 }
 
-.container .btn:hover {
+.container .btn:hover,
+.next:hover {
   background-color: #c68045;
+  transition: .5s;
 }
 
 .next {
-  background-color: #c68045;
+  background: linear-gradient(
+    0deg,
+    rgba(197, 128, 69, 1) 0%,
+    rgba(219, 728, 69, -1) 100%
+  );
   justify-self: flex-end;
   border-radius: 5px;
   color: #fff;
+  transition: .5s;
 }
 
 .prev {
@@ -93,7 +97,7 @@ html {
   justify-self: flex-start;
 }
 
-ul{
+ul {
   width: 700px;
   margin-top: 20px;
 }
@@ -106,7 +110,7 @@ ul li {
   height: 80px;
   border-bottom: 1px solid #333;
 }
-ul li:nth-last-child(1){
+ul li:nth-last-child(1) {
   border-bottom: none;
 }
 
@@ -185,13 +189,46 @@ input[type="radio"]:checked ~ .text-primary {
   background: var(--primary-color);
 }
 
-.start .btn{
+.start .btn {
   margin-right: 10px;
   cursor: pointer;
 }
-.start button{
+.start button {
   background-color: transparent;
 }
-.start button:disabled{
-  background: var(--primary-color);
+.start button:disabled:hover,
+.start button:disabled {
+  transition: .5s;
+  background: gray;
 }
+/* 
+.progresbar{
+  width: 0%;
+  height: 5px;
+}
+.progresbar{
+  animation: progres 10s linear forwards;
+}
+
+@keyframes progres{
+  0%{
+    width: 0%;
+    background: green;
+  }
+  50%{
+    width: 50%;
+    background: rgb(157, 255, 0)
+  }
+  70%{
+    width: 70%;
+    background: rgb(255, 238, 0)
+  }
+  90%{
+    width: 90%;
+    background: orangered
+  }
+  100%{
+    width: 100%;
+    background: red
+  }
+} */

@@ -22,6 +22,8 @@ export const Quiz: React.FC = () => {
   const indexOfFirstPost: number = indexOfLastPost - postsPerPage;
   const currentPosts: any = questionArr.slice(indexOfFirstPost, indexOfLastPost)
 
+  console.log(answer);
+
   const next = () => {
     if (answer === undefined) {
       toast.error('Iltimas bir juwabdi belgilen')
@@ -39,10 +41,12 @@ export const Quiz: React.FC = () => {
     return <Navigate to={'/result'} replace={true}></Navigate>
   }
 
+  const quizProps = { currentPosts, setAnswer }
+
   return (
     <div className='quiz-page'>
       <h1>Interaktiv test sisteması</h1>
-      <Questions currentPosts={currentPosts} setAnswer={setAnswer} />
+      <Questions {...quizProps} />
 
       <div className='grid'>
         <button className='btn next' onClick={next}>
