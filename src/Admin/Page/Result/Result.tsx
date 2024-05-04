@@ -18,13 +18,33 @@ export const ResultA: React.FC = () => {
   }
   useEffect(() => { getResults() }, [])
 
-
+  console.log(results);
 
 
   return (
     <div className='result-page'>
       <div className="result-content">
         <h3>Nátiyjeleri</h3>
+        <span>Id</span>
+        <span>Gruppa</span>
+        <span>Ati</span>
+        <span>Nátiyje</span>
+        <span>Waqti</span>
+        <div className="res-table">
+          <table>
+            <tbody>
+              {results?.map(item => (
+                <tr>
+                  <th>{item.id}</th>
+                  <th>{item.category?.name}</th>
+                  <th>{item.user.name}</th>
+                  <th>{item.result}</th>
+                  <th> {format(item.submitted, "yyyy-MM-dd")}</th>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   )

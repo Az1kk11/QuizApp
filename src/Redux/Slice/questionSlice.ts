@@ -16,6 +16,9 @@ export const questionSlice = createSlice({
         },
         nextQuestions: (state) => {
             state.trace += 1
+            if(state.trace === 11){
+                state.trace = 1
+            }
         },
         resetQuestions: () => {
             return {

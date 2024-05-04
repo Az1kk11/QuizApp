@@ -3,16 +3,15 @@ import { useSelector } from 'react-redux';
 
 import { selectQuestion } from '../Redux/Slice/questionSlice';
 
-
-export const Questions: React.FC<any> = ({ currentPosts, setAnswer }) => {
+export const Questions: React.FC<any> = ({ currentPosts, setAnswer, secund}) => {
   const { trace } = useSelector(selectQuestion);
-
 
   return (
     <div className="questions">
       <p>{trace} {currentPosts[0]?.question}</p>
+        <div className={'progresbar'}>{secund}</div>
       <ul>
-        {currentPosts[0]?.options.map((item: any, idx: number) => (
+        {currentPosts[0]?.options.map((item: string, idx: number) => (
           <li key={idx}>
             <input
               type='radio'

@@ -4,23 +4,22 @@ export interface categorieState {
     questions: number
 }
 
-export interface resultState {
-    id: number,
-    result: string,
-    user: {
-        id: number,
-        name: string,
-    },
-    category: {
-        id: number,
-        name: string
-    },
-    submitted: string
-}
-
-
 export interface usersState {
     id: number,
     name: string,
     results: number,
+}
+
+export interface resultState {
+    category: {
+        id: number,
+        name: string
+    },
+    id: number,
+    result: string,
+    submitted: string,
+    user: {
+        id: number,
+        name: string
+    }
 }

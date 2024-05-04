@@ -201,34 +201,6 @@ input[type="radio"]:checked ~ .text-primary {
   transition: .5s;
   background: gray;
 }
-/* 
 .progresbar{
-  width: 0%;
-  height: 5px;
+  color: #fff;
 }
-.progresbar{
-  animation: progres 10s linear forwards;
-}
-
-@keyframes progres{
-  0%{
-    width: 0%;
-    background: green;
-  }
-  50%{
-    width: 50%;
-    background: rgb(157, 255, 0)
-  }
-  70%{
-    width: 70%;
-    background: rgb(255, 238, 0)
-  }
-  90%{
-    width: 90%;
-    background: orangered
-  }
-  100%{
-    width: 100%;
-    background: red
-  }
-} */
