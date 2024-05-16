@@ -34,7 +34,7 @@ export const ResultA: React.FC = () => {
           <table>
             <tbody>
               {results?.map(item => (
-                <tr>
+                <tr key={item.id}>
                   <th>{item.id}</th>
                   <th>{item.category?.name}</th>
                   <th>{item.user.name}</th>

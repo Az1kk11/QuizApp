@@ -17,7 +17,7 @@ export const Quiz: React.FC = () => {
   const { result } = useSelector(resultSelect);
   const [postsPerPage, setPostsPerPage] = useState<number>(1)
   const [answer, setAnswer] = useState<number>()
-  const [secund, setSecund] = useState(10)
+  const [secund, setSecund] = useState(30)
 
   const indexOfLastPost: number = trace * postsPerPage;
   const indexOfFirstPost: number = indexOfLastPost - postsPerPage;
@@ -31,7 +31,7 @@ console.log(questionArr);
       setSecund(secund - 1)
       if (secund === 0) {
         dispatch(nextQuestions())
-        setSecund(10)
+        setSecund(30)
         if (answer === undefined) {
           dispatch(pushResultAction(false))
         }
@@ -48,7 +48,7 @@ console.log(questionArr);
       toast.error('Iltimas bir juwabdi belgilen')
     } else {
       dispatch(nextQuestions())
-      setSecund(10)
+      setSecund(30)
       if (Number(currentPosts[0]?.correct_option) === answer) {
         dispatch(pushResultAction(true))
       } else {
@@ -70,7 +70,7 @@ console.log(questionArr);
 
       <div className='grid'>
         <button className='btn next' onClick={next}>
-          Next
+          Keyingi
         </button>
       </div>
     </div>

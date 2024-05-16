@@ -44,7 +44,7 @@ export const GoTest: React.FC = () => {
 
     return (
         <div className="go-test">
-            <h4>Paydalanıwshı atı: <p>{user.name}</p></h4>
+            <h4>Paydalanıwshı atı: <p>{user?.name}</p></h4>
 
             <div className="select-box">
                 <label>Gruppalar</label>
@@ -60,7 +60,7 @@ export const GoTest: React.FC = () => {
                 <button
                     onClick={() => questionsRandom(categoryId)}
                 >
-                    Testdi bas
+                    Testdi baslaw
                 </button>
             </div>
 

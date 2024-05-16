@@ -46,6 +46,8 @@ export const UserLoginRegister = () => {
         try {
             const res = await AuthUserServices.userLogin(userLogin)
             dispatch(siginSuccess(res))
+            console.log(res);
+            
             toast.success(res.message)
         } catch (error: any) {
             console.log(error);
