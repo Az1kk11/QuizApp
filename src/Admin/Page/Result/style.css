@@ -3,6 +3,7 @@
   height: 100%;
   padding: 20px 40px;
 }
+
 .result-page .result-content {
   background-color: rgba(0, 0, 0, 0.301);
   width: 100%;
@@ -10,6 +11,7 @@
   border-radius: 5px;
   position: relative;
 }
+
 .result-page .result-content h3 {
   color: rgb(225, 225, 225);
   font-size: 20px;
@@ -17,66 +19,14 @@
   padding-top: 20px;
   letter-spacing: 1px;
 }
+
 .result-page .result-content .res-table {
   width: auto;
   height: 500px;
   overflow-y: scroll;
   margin-top: 40px;
-  margin-left: 100px;
 }
 
-.result-page .result-content .res-table tbody th{
+.result-page .result-content .res-table tbody th {
   color: rgb(219, 219, 219);
-}
-.result-page .result-content span:nth-child(2){
-  position: absolute;
-  top: 50px;
-  left: 110px;
-  color: #ddd;
-  font-size: 18px;
-  font-weight: 500;
-  border-bottom: 1px solid gray;
-  padding: 0 10px;
-}
-
-.result-page .result-content span:nth-child(3){
-  position: absolute;
-  top: 50px;
-  left: 320px;
-  color: #ddd;
-  font-size: 18px;
-  font-weight: 500;
-  border-bottom: 1px solid gray;
-  padding: 0 10px;
-}
-
-.result-page .result-content span:nth-child(4){
-  position: absolute;
-  top: 50px;
-  left: 660px;
-  color: #ddd;
-  font-size: 18px;
-  font-weight: 500;
-  border-bottom: 1px solid gray;
-  padding: 0 10px;
-}
-.result-page .result-content span:nth-child(5){
-  position: absolute;
-  top: 50px;
-  left: 815px;
-  color: #ddd;
-  font-size: 18px;
-  font-weight: 500;
-  border-bottom: 1px solid gray;
-  padding: 0 10px;
-}
-.result-page .result-content span:nth-child(6){
-  position: absolute;
-  top: 50px;
-  left: 1010px;
-  color: #ddd;
-  font-size: 18px;
-  font-weight: 500;
-  border-bottom: 1px solid gray;
-  padding: 0 10px;
 }

@@ -2,17 +2,19 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     position: relative;
 }
+
 .admin-login img {
     position: absolute;
     width: 250px;
     top: 80px;
 }
+
 .admin-login h3 {
     color: #fff;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .admin-login form {
@@ -50,7 +52,7 @@
     outline: none;
 }
 
-.admin-login button{
+.admin-login button {
     height: 35px;
     font-size: 16px;
     font-weight: 500;
@@ -63,17 +65,18 @@
     margin-top: 20px;
 }
 
-.admin-login button:hover{
+.admin-login button:hover {
     background-color: #0dff92;
     color: #333;
     border: none;
 }
 
 @media (max-width: 600px) {
-    .admin-login form{
+    .admin-login form {
         width: 90%;
     }
-    .admin-login h3{
+
+    .admin-login h3 {
         font-size: 16px;
     }
 }

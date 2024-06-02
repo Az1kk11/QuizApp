@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-
 import { startExamAction } from '../Redux/Slice/questionSlice'
 import { selectUserSlice } from '../Redux/Slice/userSlice'
 import { categorie, select } from '../Redux/Slice/slice'
@@ -47,7 +46,7 @@ export const GoTest: React.FC = () => {
             <h4>Paydalanıwshı atı: <p>{user?.name}</p></h4>
 
             <div className="select-box">
-                <label>Gruppalar</label>
+                <label>Kategoriyalar</label>
 
                 <select onChange={(e: any) => setCategoryId(e.target.value)}>
                     {categories.map((item: categorieType) => (

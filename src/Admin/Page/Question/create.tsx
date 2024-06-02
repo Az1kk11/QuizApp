@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-
+import { toast } from 'react-toastify'
 import { categorie, select } from '../../../Redux/Slice/slice'
 import AuthUserServices from '../../../Redux/services'
 import { categorieState } from '../../type'
 
 import './style.css'
-import { toast } from 'react-toastify'
 
 export const CreateQ: React.FC = () => {
     const dispatch = useDispatch()
@@ -36,7 +35,7 @@ export const CreateQ: React.FC = () => {
         }
         try {
             await AuthUserServices.createQuestion(req)
-            toast.success('successfully created')
+            toast.success('Tabıslı jaratıldı ')
         } catch (error: any) {
             console.log(error);
             toast.error(error.response.data.message)
@@ -48,7 +47,7 @@ export const CreateQ: React.FC = () => {
     return (
         <div className='question-page'>
             <div className="question-content">
-                <h3>Test qosiw</h3>
+                <h3>Test qosıw</h3>
                 <form onSubmit={createQuestionHandler}>
                     <input
                         type="text"
@@ -75,7 +74,7 @@ export const CreateQ: React.FC = () => {
                         <option value={3}>3-variant</option>
                         <option value={4}>4-variant</option>
                     </select>
-                    <button type='submit'>Qosiw</button>
+                    <button type='submit'>Qosıw</button>
                 </form>
             </div>
         </div>

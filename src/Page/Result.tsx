@@ -1,15 +1,14 @@
-import React, { useState } from 'react'
-
+import React from 'react'
 import { resetQuestions, selectQuestion } from '../Redux/Slice/questionSlice';
-import { useDispatch, useSelector, useStore } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
 import { resetResult, resultSaveBc, resultSelect } from '../Redux/Slice/resultSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import { getItem, removeItem } from '../Helper/persistance-storage';
+import { toast } from 'react-toastify';
 import { selectUserSlice } from '../Redux/Slice/userSlice';
+import AuthUserServices from '../Redux/services';
 
 import '../Style/Result.css'
-import AuthUserServices from '../Redux/services';
-import { toast } from 'react-toastify';
-import { getItem, removeItem } from '../Helper/persistance-storage';
 
 export const Result: React.FC = () => {
   const dispatch = useDispatch()
@@ -35,7 +34,7 @@ export const Result: React.FC = () => {
     dispatch(resetQuestions())
     navigate('/')
   }
-  
+
   const resultSave = async (e: React.FormEventHandler<HTMLFormElement> | any) => {
     e.preventDefault()
 
@@ -49,7 +48,7 @@ export const Result: React.FC = () => {
       dispatch(resultSaveBc(res))
       toast.success('Nátiyjeni saqlandı')
       removeItem('categoryId')
-      
+
     } catch (error: any) {
       console.log(error)
     }

@@ -24,14 +24,18 @@ export const ResultA: React.FC = () => {
   return (
     <div className='result-page'>
       <div className="result-content">
-        <h3>Nátiyjeleri</h3>
-        <span>Id</span>
-        <span>Gruppa</span>
-        <span>Ati</span>
-        <span>Nátiyje</span>
-        <span>Waqti</span>
+        <h3>Test nátiyjeleri</h3>
         <div className="res-table">
           <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Gruppa</th>
+                <th>Atı</th>
+                <th>Nátiyje</th>
+                <th>Waqtı</th>
+              </tr>
+            </thead>
             <tbody>
               {results?.map(item => (
                 <tr key={item.id}>

@@ -21,17 +21,21 @@ export const Users: React.FC = () => {
         <div className='users'>
             <div className="user-content">
                 <h3>Paydalanıwshılar</h3>
-                <span>Id</span>
-                <span>Atı</span>
-                <span>Nátiyjeleri</span>
                 <div className="res-table">
                     <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Atı</th>
+                                <th>Nátiyjeleri</th>
+                            </tr>
+                        </thead>
                         <tbody>
                             {users?.map(item => (
                                 <tr>
                                     <th>{item.id}</th>
                                     <th>{item.name}</th>
-                                    <td>{item.results}</td>
+                                    <th>{item.results}</th>
                                 </tr>
                             ))}
                         </tbody>

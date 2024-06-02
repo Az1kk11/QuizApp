@@ -9,16 +9,14 @@
 body,
 html {
   height: 100vh;
-  background: linear-gradient(
-    0deg,
-    rgba(28, 7, 124, 1) 0%,
-    rgba(198, 128, 69, 1) 100%,
-    rgba(197, 128, 69, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(28, 7, 124, 1) 0%,
+      rgba(198, 128, 69, 1) 100%,
+      rgba(197, 128, 69, 1) 100%);
   background-repeat: repeat-x;
 }
 
-* > * {
+*>* {
   font-family: "Poppins", sans-serif;
 }
 
@@ -61,11 +59,9 @@ html {
 
 .container .btn {
   padding: 0.2em 1.7em;
-  background: linear-gradient(
-    0deg,
-    rgba(197, 128, 69, 1) 0%,
-    rgba(219, 728, 69, -1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(197, 128, 69, 1) 0%,
+      rgba(219, 728, 69, -1) 100%);
   color: #fff;
   font-size: 16px;
   text-decoration: none;
@@ -81,11 +77,9 @@ html {
 }
 
 .next {
-  background: linear-gradient(
-    0deg,
-    rgba(197, 128, 69, 1) 0%,
-    rgba(219, 728, 69, -1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(197, 128, 69, 1) 0%,
+      rgba(219, 728, 69, -1) 100%);
   justify-self: flex-end;
   border-radius: 5px;
   color: #fff;
@@ -101,6 +95,7 @@ ul {
   width: 700px;
   margin-top: 20px;
 }
+
 ul li {
   color: #aaaaaa;
   display: block;
@@ -110,6 +105,7 @@ ul li {
   height: 80px;
   border-bottom: 1px solid #333;
 }
+
 ul li:nth-last-child(1) {
   border-bottom: none;
 }
@@ -168,15 +164,15 @@ ul li .check::before {
   -webkit-transition: background 0.25s linear;
 }
 
-input[type="radio"]:checked ~ .check {
+input[type="radio"]:checked~.check {
   border: 5px solid var(--primary-color);
 }
 
-input[type="radio"]:checked ~ .check::before {
+input[type="radio"]:checked~.check::before {
   background: var(--primary-color);
 }
 
-input[type="radio"]:checked ~ .text-primary {
+input[type="radio"]:checked~.text-primary {
   color: var(--primary-color);
 }
 
@@ -193,14 +189,17 @@ input[type="radio"]:checked ~ .text-primary {
   margin-right: 10px;
   cursor: pointer;
 }
+
 .start button {
   background-color: transparent;
 }
+
 .start button:disabled:hover,
 .start button:disabled {
   transition: .5s;
   background: gray;
 }
-.progresbar{
+
+.progresbar {
   color: #fff;
 }

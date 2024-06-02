@@ -35,7 +35,7 @@ export const CreateC: React.FC = () => {
     newCategory.set('name', catName)
     try {
       await AuthUserServices.createCategory(newCategory)
-      toast.success('successfully created')
+      toast.success('Tabıslı jaratıldı')
       getCategory()
     } catch (error: any) {
       console.log(error);
@@ -48,18 +48,18 @@ export const CreateC: React.FC = () => {
   return (
     <div className="category-page">
       <div className="category-content">
-        <h3>categorya jaratiw</h3>
+        <h3>Kategoriya jaratıw</h3>
         <form onSubmit={createCategoryHandler}>
-          <input type="text" required placeholder='Category name' value={catName} onChange={e => setCatName(e.target.value)} />
-          <button type='submit'>Jaratiw</button>
+          <input type="text" required placeholder='Gruppa atı' value={catName} onChange={e => setCatName(e.target.value)} />
+          <button type='submit'>jaratıw</button>
         </form>
         <table>
           <thead>
             <tr>
               <th>id</th>
-              <th>Ati</th>
+              <th>Kategoriya atı</th>
               <th>Sorawlar</th>
-              <th>Oshiriw</th>
+              <th>Óshiriw</th>
             </tr>
           </thead>
           <tbody>

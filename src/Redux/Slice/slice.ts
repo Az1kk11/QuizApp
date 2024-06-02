@@ -16,7 +16,7 @@ export const categoriesSlice = createSlice({
     }
 })
 
-export const {categorie } = categoriesSlice.actions
+export const { categorie } = categoriesSlice.actions
 
 export const select = (state: RootState) => state.slice
 

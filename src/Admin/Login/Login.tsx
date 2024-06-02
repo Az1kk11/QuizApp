@@ -1,12 +1,9 @@
-// import logo from '../../assets/imags/karsoft.png'
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-
 import { selectAuthAdmin, siginAdminStart, siginAdminSuccess } from '../../Redux/Slice/adminSlice'
 import AuthUserServices from '../../Redux/services'
-
 import { removeItem } from '../../Helper/persistance-storage'
 
 import './admin-login.css'
@@ -28,10 +25,10 @@ export const AdminLogin: React.FC = () => {
         adminLogin.set('password', password)
 
         dispatch(siginAdminStart())
-        try {
+        try {   
             const response = await AuthUserServices.adminLogin(adminLogin)
             dispatch(siginAdminSuccess(response))
-            toast.success('You have successfully logged in')
+            toast.success('Siz tabıslı kirdingiz')
         } catch (error: any) {
             console.log(error);
             toast.error(error.response.data.message)
@@ -42,13 +39,12 @@ export const AdminLogin: React.FC = () => {
 
     return (
         <section className='admin-login'>
-            {/* <img src={logo} alt="" /> */}
             <form onSubmit={loginHandler}>
                 <h3>Admin</h3>
                 <div className="input-box">
                     <input
                         type='text'
-                        placeholder='Email'
+                        placeholder='Elektron pochta'
                         required
                         value={email}
                         onChange={e => setEmail(e.target.value)}
@@ -57,7 +53,7 @@ export const AdminLogin: React.FC = () => {
                 <div className="input-box">
                     <input
                         type="password"
-                        placeholder='Password'
+                        placeholder='Jasırın sóz'
                         required
                         value={password}
                         onChange={e => setPassword(e.target.value)}
@@ -67,7 +63,7 @@ export const AdminLogin: React.FC = () => {
                     type='submit'
                     disabled={isLoading}
                 >
-                    {isLoading ? 'loading...' : 'Login'}
+                    {isLoading ? 'Júklenbekte...' : 'Kiriw'}
                 </button>
             </form>
         </section>

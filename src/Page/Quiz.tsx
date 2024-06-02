@@ -1,12 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Navigate } from 'react-router-dom'
-
 import { nextQuestions, selectQuestion, } from '../Redux/Slice/questionSlice'
 import { pushResultAction, resultSelect } from '../Redux/Slice/resultSlice'
-
 import { toast } from 'react-toastify'
-
 import { Questions } from '../Components/Questions'
 
 import '../Style/Quiz.css'
@@ -22,7 +19,6 @@ export const Quiz: React.FC = () => {
   const indexOfLastPost: number = trace * postsPerPage;
   const indexOfFirstPost: number = indexOfLastPost - postsPerPage;
   const currentPosts: any = questionArr.slice(indexOfFirstPost, indexOfLastPost)
-console.log(questionArr);
 
   let timer: any
 
@@ -41,11 +37,9 @@ console.log(questionArr);
     return () => clearInterval(timer)
   }, [secund])
 
-  console.log(secund);
-
   const next = () => {
     if (answer === undefined) {
-      toast.error('Iltimas bir juwabdi belgilen')
+      toast.error('Iltimas bir juwabdı belgileń')
     } else {
       dispatch(nextQuestions())
       setSecund(30)
@@ -61,7 +55,7 @@ console.log(questionArr);
     return <Navigate to={'/result'} replace={true}></Navigate>
   }
 
-  const quizProps = { currentPosts, setAnswer, secund}
+  const quizProps = { currentPosts, setAnswer, secund }
 
   return (
     <div className='quiz-page'>

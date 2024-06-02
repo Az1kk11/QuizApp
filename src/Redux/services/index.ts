@@ -1,4 +1,3 @@
-import { RootState } from "../store";
 import axios from "./api";
 
 const AuthUserServices = {
@@ -6,7 +5,6 @@ const AuthUserServices = {
         const { data } = await axios.post(`/employee/login`, adminLogin)
         return data
     },
-
 
     async createCategory(name: object) {
         const { data } = await axios.post('/category/create', name)
@@ -22,7 +20,7 @@ const AuthUserServices = {
     },
 
 
-    async createQuestion(question:object) {
+    async createQuestion(question: object) {
         const { data } = await axios.post('/question/create', question)
         return data
     },
@@ -55,7 +53,7 @@ const AuthUserServices = {
 
 
     async addResult(result: object) {
-        const { data } = await axios.post('/result/create', result )
+        const { data } = await axios.post('/result/create', result)
         return data
     },
     async result() {

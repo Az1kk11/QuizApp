@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-
 import { siginStart, siginSuccess } from '../Redux/Slice/userSlice'
 import AuthUserServices from '../Redux/services'
-
 import { toast } from 'react-toastify'
 
 import '../Style/Main.css'
@@ -39,19 +37,21 @@ export const UserLoginRegister = () => {
 
     const loginHandler = async (e: React.FormEventHandler<HTMLFormElement> | any) => {
         e.preventDefault()
-        const userLogin = new FormData()
-        userLogin.set('email', email)
-        userLogin.set('password', password)
-        dispatch(siginStart())
-        try {
-            const res = await AuthUserServices.userLogin(userLogin)
-            dispatch(siginSuccess(res))
-            console.log(res);
-            
-            toast.success(res.message)
-        } catch (error: any) {
-            console.log(error);
-            toast.error(error?.response?.data?.message)
+        if (email === 'admin@example.com') {
+            toast.error('Iltimas basqa elektron poshta kiritiń')
+        } else {
+            const userLogin = new FormData()
+            userLogin.set('email', email)
+            userLogin.set('password', password)
+            dispatch(siginStart())
+            try {
+                const res = await AuthUserServices.userLogin(userLogin)
+                dispatch(siginSuccess(res))
+                toast.success(res.message)
+            } catch (error: any) {
+                console.log(error);
+                toast.error(error?.response?.data?.message)
+            }
         }
     }
 
@@ -62,7 +62,7 @@ export const UserLoginRegister = () => {
                     <form id='form' onSubmit={loginHandler}>
                         <input
                             type="email"
-                            placeholder='Email'
+                            placeholder='Elektron pochta'
                             onChange={e => setEmail(e.target.value)}
                             value={email}
                             autoComplete='off'
@@ -70,7 +70,7 @@ export const UserLoginRegister = () => {
                         />
                         <input
                             type='password'
-                            placeholder='password'
+                            placeholder='Jasırın sóz'
                             onChange={e => setPassword(e.target.value)}
                             value={password}
                             autoComplete='off'
@@ -90,7 +90,7 @@ export const UserLoginRegister = () => {
                         />
                         <input
                             type="email"
-                            placeholder='Email'
+                            placeholder='Elektron pochta'
                             onChange={e => setEmail(e.target.value)}
                             value={email}
                             autoComplete='off'
@@ -98,7 +98,7 @@ export const UserLoginRegister = () => {
                         />
                         <input
                             type='password'
-                            placeholder='password'
+                            placeholder='Jasırın sóz'
                             onChange={e => setPassword(e.target.value)}
                             value={password}
                             autoComplete='off'

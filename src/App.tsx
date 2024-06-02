@@ -4,12 +4,10 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 import { selectUserSlice, siginSuccess } from './Redux/Slice/userSlice'
 import AuthUserServices from './Redux/services'
-
 import Routers from './Route/routers'
 import { LeftNavbar } from './Admin'
 
 import './Style/App.css'
-import { getItem } from './Helper/persistance-storage'
 
 const App: React.FC = () => {
   const dispatch = useDispatch()
@@ -25,8 +23,6 @@ const App: React.FC = () => {
       console.log(error);
     }
   }
-
-  let key = getItem('token')
 
   useEffect(() => {
     getUser()

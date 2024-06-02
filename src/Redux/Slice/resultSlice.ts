@@ -14,14 +14,14 @@ export const resultSlice = createSlice({
             state.result.push(action.payload)
         },
         resetResult: () => {
-            return{
+            return {
                 result: []
             }
         },
         resultSaveBc: (state, action) => {
-            if(action.payload?.success === true){
+            if (action.payload?.success === true) {
                 state.saveResult = true
-            }else{
+            } else {
                 state.saveResult = false
             }
         }

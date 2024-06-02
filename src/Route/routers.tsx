@@ -1,9 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-
 import { Main, Quiz, Result } from '../Page'
 import { AdminLogin, CreateC, CreateQ, ResultA, Users } from '../Admin'
-
 import Protected from './protected'
 
 const Routers: React.FC = () => {

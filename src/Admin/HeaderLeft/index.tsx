@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
@@ -10,10 +10,11 @@ import './navbar.css'
 
 export const LeftNavbar:React.FC = () => {
     const [isOpen, setOpen] = useState<boolean>(false)
-    const toggle = () => setOpen(!isOpen)
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const location = useLocation()
+    
+    const toggle = () => setOpen(!isOpen)
 
     const logoutHandler = () => {
         dispatch(logoutAdmin())
@@ -57,7 +58,7 @@ export const LeftNavbar:React.FC = () => {
                     onClick={logoutHandler}
                 >
                     <i className="ri-logout-box-line"></i>
-                    <span style={{ display: isOpen ? 'block' : 'none' }}>Shigiw</span>
+                    <span style={{ display: isOpen ? 'block' : 'none' }}>Shıǵıw</span>
                 </li>
             </ul>
         </section>

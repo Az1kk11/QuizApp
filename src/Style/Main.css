@@ -17,6 +17,7 @@
   justify-content: center;
   margin-top: 20px;
 }
+
 .login-register .register {
   width: 300px;
   display: flex;
@@ -24,6 +25,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .login-register .register h3 {
   text-align: center;
   color: #fff;
@@ -31,26 +33,27 @@
   font-weight: 400;
   letter-spacing: 1px;
 }
+
 .login-register .register form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .login-register .register input {
   width: 300px;
   height: 25px;
   margin-bottom: 10px;
   padding: 0 10px;
 }
+
 .login-register .register button {
   height: 28px;
   width: 200px;
-  background: linear-gradient(
-    0deg,
-    rgba(197, 128, 69, 1) 0%,
-    rgba(219, 728, 69, -1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(197, 128, 69, 1) 0%,
+      rgba(219, 728, 69, -1) 100%);
   background-repeat: repeat-x;
   color: #fff;
   border: none;
@@ -59,44 +62,50 @@
   margin-bottom: 10px;
   transition: 0.5s;
 }
+
 .login-register .register button:hover {
   background-color: #c67f45ce;
 }
+
 .login-register .register button:active {
   transform: scale(0.9);
   transition: 0.5s;
 }
+
 .login-register .register p {
   color: #aaa;
 }
+
 .login-register .register p:hover {
   color: rgb(124, 124, 124);
 }
+
 .go-test {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .go-test p {
   color: #fff;
   text-transform: capitalize;
   font-size: 22px;
   margin-top: 20px;
 }
+
 .go-test .btn-box {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
 }
+
 .go-test .btn-box button {
   font-size: 18px;
-  background: linear-gradient(
-    0deg,
-    rgba(197, 128, 69, 1) 0%,
-    rgba(219, 728, 69, -1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(197, 128, 69, 1) 0%,
+      rgba(219, 728, 69, -1) 100%);
   border: none;
   color: #fff;
   width: auto;
@@ -107,24 +116,29 @@
   padding: 5px 10px;
   margin-top: 10px;
 }
+
 .go-test button:hover {
   background-color: rgba(197, 128, 69, 1);
 }
+
 .go-test button:active {
   transform: scale(0.9);
   transition: 0.5s;
 }
+
 .go-test .select-box {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 15px;
 }
+
 .go-test .select-box label {
   color: #fff;
   margin-right: 15px;
   font-size: 18px;
 }
+
 .go-test .select-box select {
   width: auto;
   height: 30px;
@@ -143,6 +157,7 @@
   margin-top: 10px;
   /* margin-bottom: -5px; */
 }
+
 .go-test h4 p {
   margin: 0;
   margin-left: 20px;
@@ -159,6 +174,7 @@
   color: #fff;
   cursor: pointer;
 }
+
 .logout i:hover {
   color: rgb(167, 167, 167);
 }

@@ -3,12 +3,14 @@
   height: 100%;
   padding: 20px 40px;
 }
+
 .category-page .category-content {
   background-color: rgba(0, 0, 0, 0.301);
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
+
 .category-page .category-content h3 {
   color: rgb(225, 225, 225);
   font-size: 20px;
@@ -22,6 +24,7 @@
   align-items: center;
   margin-top: 20px;
 }
+
 .category-page .category-content form input {
   width: 450px;
   height: 35px;
@@ -32,8 +35,8 @@
   font-size: 16px;
   margin-left: 100px;
   margin-top: 10px;
-  
 }
+
 .category-page .category-content form button {
   width: 200px;
   height: 35px;
@@ -44,10 +47,12 @@
   margin-top: 50px;
   padding-left: 51px;
 }
+
 .category-page .category-content table tbody th {
   color: rgba(238, 238, 238, 0.767);
   letter-spacing: 1px;
 }
+
 .category-page .category-content table thead th {
   color: #fff;
   letter-spacing: 1px;

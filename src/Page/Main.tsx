@@ -1,14 +1,10 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-
 import { logoutUser, selectUserSlice } from '../Redux/Slice/userSlice'
-
-import { UserLoginRegister } from '../Components/UserLoginRegister'
-import { GoTest } from '../Components/GoTest'
+import { removeItem } from '../Helper/persistance-storage'
+import { GoTest, UserLoginRegister } from '../Components'
 
 import '../Style/Main.css'
-import { removeItem } from '../Helper/persistance-storage'
-
 
 export const Main: React.FC = () => {
   const { logedIn } = useSelector(selectUserSlice)

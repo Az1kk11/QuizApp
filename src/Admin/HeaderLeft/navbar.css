@@ -38,17 +38,20 @@
     align-items: center;
 }
 
-.sidebar-left .logo-admin{
+.sidebar-left .logo-admin {
     width: 120px;
 }
+
 .sidebar-menu .sidebar i {
     margin-right: 10px;
     font-size: 20px;
     font-weight: 100;
 }
-.sidebar-menu .sidebar{
+
+.sidebar-menu .sidebar {
     color: #fff;
 }
+
 .sidebar-menu .sidebar:hover {
     color: #fff;
     background: rgba(255, 255, 255, 0.15);
