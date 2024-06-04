@@ -30,7 +30,7 @@ export const ResultA: React.FC = () => {
             <thead>
               <tr>
                 <th>Id</th>
-                <th>Gruppa</th>
+                <th>Kategoriya</th>
                 <th>Atı</th>
                 <th>Nátiyje</th>
                 <th>Waqtı</th>

@@ -50,7 +50,7 @@ export const CreateC: React.FC = () => {
       <div className="category-content">
         <h3>Kategoriya jaratıw</h3>
         <form onSubmit={createCategoryHandler}>
-          <input type="text" required placeholder='Gruppa atı' value={catName} onChange={e => setCatName(e.target.value)} />
+          <input type="text" required placeholder='Kategoriya atı' value={catName} onChange={e => setCatName(e.target.value)} />
           <button type='submit'>jaratıw</button>
         </form>
         <table>
